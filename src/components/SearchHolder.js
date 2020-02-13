@@ -18,6 +18,7 @@ let SearchHolder = (props) => {
                 setLoader(false)
                 setVals(vals.data.data)
             } catch (err) {
+                setLoader(false)
                 console.log(err)
             }
         }
@@ -28,6 +29,7 @@ let SearchHolder = (props) => {
                 setLoader(false)
                 setVals(vals.data.data)
             } catch (err) {
+                setLoader(false)
                 console.log(err)
             }
         }
@@ -39,6 +41,7 @@ let SearchHolder = (props) => {
                 //console.log(vals.data.data)
                 setVals([vals.data.data])
             } catch(err) {
+                setLoader(false)
                 console.log(err)
             }
         }
