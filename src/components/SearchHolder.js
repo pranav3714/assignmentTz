@@ -43,6 +43,7 @@ let SearchHolder = (props) => {
             } catch(err) {
                 setLoader(false)
                 console.log(err)
+                setVals([])
             }
         }
     }
