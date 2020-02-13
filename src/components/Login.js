@@ -18,7 +18,7 @@ const Login = () => {
     let submitHandler = async (e) => {
         e.preventDefault()
         let data = {username, password}
-        let resp = await axios.post("https://votecommision.herokuapp.com/admin/login", data)
+        let resp = await axios.post("http://localhost:4000/admin/login", data)
         if (resp.data.message) {
             const notify = () => toast(resp.data.message)
             notify()
