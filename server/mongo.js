@@ -5,7 +5,7 @@ const mon = require("mongoose")
 const jwt = require("jsonwebtoken")
 const Datauri = require('datauri')
 const datauri = new Datauri()
-const mongoUrl = process.env.MONGO_URL //+ process.env.DB_NAME
+const mongoUrl = process.env.MONGO_URL + process.env.DB_NAME
 const sha256 = require("sha256")
 
 mon.connect(mongoUrl, { useNewUrlParser: true, useUnifiedTopology: true }, (err) => {
