@@ -16,7 +16,7 @@ name: String value that represents the name of the admin.<br />
 username: String value that represents the username of the admin.<br />
 password: String value that represents the password of the admin hashed using sha256 hashing algorithm.<br />
 
-3) Add a .env file in the root of cloned project directory that contains the following values.<br />
+3) Add a .env file in the server folder present in root of cloned project directory that contains the following values.<br />
 JWT_SECRET="xhJ6v4y9Ic0UZs7SIEsldpuetj06mHyy7pjcAO7FyJfgsYdbLdnQ6yjaoVjiDEhp" <br />
 MONGO_URL="mongodb://localhost:27017/" <br />
 DB_NAME = "electoraldb" <br />
