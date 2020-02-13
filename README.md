@@ -34,4 +34,4 @@ ADB_COLL = "admins" <br />
 `npm i` & `npm start`
 
 6) Install all the dependancies and run the API server using.(in new command prompt or terminal set on project root path)<br />
-`cd server` & `npm i` & `npm start` <br />
+`cd server` & `npm i` `& npm run build` & `npm start` <br />
