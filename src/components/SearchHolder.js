@@ -39,7 +39,12 @@ let SearchHolder = (props) => {
                 let vals = await axios.get("http://localhost:4000/voter/search/eid/" + val, { headers })
                 setLoader(false)
                 //console.log(vals.data.data)
-                setVals([vals.data.data])
+                if(vals.data.data) {
+                    setVals([vals.data.data])
+                }
+                else{
+                    setVals([])
+                }
             } catch(err) {
                 setLoader(false)
                 console.log(err)
