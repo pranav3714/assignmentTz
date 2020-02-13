@@ -56,7 +56,7 @@ let Registration = () => {
         fd.set("district", district)
         fd.set("state", state)
         fd.set("houseAddress", address)
-        axios.post("https://votecommision.herokuapp.com/voter/add", fd, {
+        axios.post("http://localhost:4000/voter/add", fd, {
             headers: {'authorization': `Bearer ${localStorage.getItem("token")}`}
         }).then((resp) => {
             const notify = () => toast("Submit Successful")
